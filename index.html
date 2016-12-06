@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <title>Resume</title>
+</head>
+
+<body>
+    <div id="app">
+        <header class="tc pv4">
+            <img src="/src/images/profile.jpeg" class="br-100 pa1 ba b--black-10 h3 w3" alt="avatar">
+            <h1 class="f5 f4-ns fw6 mid-gray">{{name}}</h1>
+
+            <div class="gray fw2 tracked mt" v-for="b in bio">
+                <a class="f6 link dim gray fw2 tracked mt" href="#" title="Home">
+            {{b}}</a>
+            </div>
+        </header>
+        <ul class="list pl0">
+            <li class="pa3 pa4-ns bb b--black-10">
+                <b class="db f5 mb1">Summary</b>
+                <span class="f6 db lh-copy measure">
+        <ul>
+        <li v-for="point in points">{{point}}</li>
+
+        </ul>
+      </span>
+            </li>
+            <li class="pa3 pa4-ns bb b--black-10">
+                <b class="db f5 mb1">Skill Set</b>
+                <span class="f6 db lh-copy measure">
+              <ul class="list ph3 ph5-ns pv4">
+          <li class="dib mr1 mb2" v-for="skill in skills">
+            <a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba  b--black-20">{{skill}}</a></li>
+        </ul></span>
+            </li>
+            <li class="pa3 pa4-ns bb b--black-10">
+                <b class="db f5 mb1">Experience</b>
+                <span class="f6 db lh-copy measure">
+                 
+                  <ul class="list ph3 ph5-ns pv4">
+          <li class="dib mr1 mb2" v-for="proj in projects">{{proj}}</li>
+        </ul>
+        </span>
+            </li>
+        </ul>
+    </div>
+    <script src="dist/build.js"></script>
+</body>
+<style>
+    .mt {
+        margin-top: .1rem;
+    }
+    
+    .bb {
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+    
+    .b--black-10 {
+        border-color: rgba(0, 0, 0, .1);
+    }
+    
+    .db {
+        display: block;
+    }
+    
+    .lh-copy {
+        line-height: 1.5;
+    }
+    
+    .list {
+        list-style-type: none;
+    }
+    
+    .pa3 {
+        padding: 1rem;
+    }
+    
+    .pl0 {
+        padding-left: 0;
+    }
+    
+    .mb1 {
+        margin-bottom: .25rem;
+    }
+    
+    .f3 {
+        font-size: 1.5rem;
+    }
+    
+    .f5 {
+        font-size: 1rem;
+    }
+    
+    .measure {
+        max-width: 100%;
+    }
+    
+    @media screen and (min-width: 30em) {
+        .pa4-ns {
+            padding: 2rem;
+        }
+    }
+</style>
+
+</html>
