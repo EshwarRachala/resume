@@ -3,7 +3,7 @@ const skills = ['Html', 'JavaScript', 'Jquery', 'Vuejs',
     'ASP.NET', 'ASP.NET Core', 'MVC', 'MVP', 'Design Patterns',
     'SOAP services', 'Restful Services',
     'R', 'CSS', 'SQL', 'No Sql', 'Database Design',
-    'SSRS', 'Tableau'
+    'SSRS', 'Tableau', 'd3'
 ]
 
 

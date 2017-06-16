@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
     <title>Resume</title>
 </head>
@@ -19,34 +20,41 @@
         </header>
         <ul class="list pl0">
             <li class="pa3 pa4-ns bb b--black-10">
-                <b class="db f5 mb1">Summary</b>
                 <span class="f6 db lh-copy measure">
-                    <ul><li v-for="point in points">{{point}}</li></ul>
-                </span>
+                      <b class="db f5 mb1">Summary</b>
+                    <ul class="ph3 ph5-ns pv4">
+                        <li v-for="point in points">
+                            <span>
+                            {{point}}
+
+                            </span>
             </li>
-            <li class="pa3 pa4-ns bb b--black-10">
-                <b class="db f5 mb1">Skill Set</b>
-                <span class="f6 db lh-copy measure">
+        </ul>
+        </span>
+        </li>
+        <li class="pa3 pa4-ns bb b--black-10">
+            <b class="db f5 mb1">Skill Set</b>
+            <span class="f6 db lh-copy measure">
                     <ul class="list ph3 ph5-ns pv4">
                         <li class="dib mr1 mb2" v-for="skill in skills">
                             <a href="#" class="f6 f5-ns b db pa2 link dim dark-gray ba b--black-20">{{skill}}</a>
                         </li>
                     </ul>
                 </span>
-            </li>
-            <li class="pa3 pa4-ns bb b--black-10">
-                <b class="db f5 mb1">Experience</b>
-                <span class="f6 db lh-copy measure">
-                   <ul class="">
+        </li>
+        <li class="pa3 pa4-ns bb b--black-10">
+            <b class="db f5 mb1">Experience</b>
+            <span class="f6 db lh-copy measure">
+                   <ul class="list ph3 ph5-ns pv4">
                       <li class="dib" v-for="proj in projects">
                         <article class="pa3 pa5-ns">
                            <p class="f6 lh-copy gray mv0"><span class="ttu">{{proj.title}}</span></p>
-                <time class="f6 db gray">{{proj.org}} <span>{{proj.duration}}</span></time>
-                <p class="measure lh-copy">
-                    {{proj.desc}}
-                </p>
-                </article>
-            </li>
+            <time class="f6 db gray">{{proj.org}} <span>{{proj.duration}}</span></time>
+            <p class="measure lh-copy">
+                {{proj.desc}}
+            </p>
+            </article>
+        </li>
         </ul>
         </span>
         </li>
