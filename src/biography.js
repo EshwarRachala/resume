@@ -1,7 +1,7 @@
 const biography = {
     title: 'Application Developer',
-    phone: '(904) 290-1751',
-    email: 'rachalaeshwar1@gmail.com'
+    phone: '(904) 480 8302',
+    email: 'eshwar.rachala@outlook.com'
 }
 
 export default biography

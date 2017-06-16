@@ -1,5 +1,9 @@
-const skills = ['C#', 'JavaScript', 'ASP.NET MVC', 'ASP.NET Core MVC',
-    'ASP.NET Core WebApi', 'Jquery', 'Vuejs', 'React', 'AngularJs', 'BootStrap', 'R', 'CSS', 'SQL', 'Database Design'
+const skills = ['Html', 'JavaScript', 'Jquery', 'Vuejs',
+    'React', 'AngularJs', 'BootStrap', 'C#',
+    'ASP.NET', 'ASP.NET Core', 'MVC', 'MVP', 'Design Patterns',
+    'SOAP services', 'Restful Services',
+    'R', 'CSS', 'SQL', 'No Sql', 'Database Design',
+    'SSRS', 'Tableau'
 ]
 
 
