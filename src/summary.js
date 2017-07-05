@@ -3,6 +3,7 @@ const summary = ["7+ years of experience with all phases of Software Development
     "Participated in Agile Scrum meetings such as Daily Scrum meetings, Release Planning, Sprint Planning, Backlog Grooming, Retrospective meetings and sprint demo",
     "Developed applications using javascript frameworks such as React,Angular,vue and immutable Js",
     "Redux,Flux and Mobx used to implement state management for React and Angular applications",
+    "Typescript is used for Angular applications",
     "Rx/js observable pattern used for angular applications",
     "webpack, rollup, grunt and gulp used for bundling the applications",
     "deployed applications to iis, apache and used kestral server for .net core applications",
